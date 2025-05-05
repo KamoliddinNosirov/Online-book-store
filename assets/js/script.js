@@ -66,11 +66,11 @@ var swiper = new Swiper(".heroSwiper", {
           spaceBetween: 10,
         },
         "@1.00": {
-          slidesPerView: 3,
+          slidesPerView: 4,
           spaceBetween: 20,
         },
         "@1.50": {
-          slidesPerView: 4,
+          slidesPerView: 5,
           spaceBetween: 20,
         },
       },
