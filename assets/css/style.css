@@ -15,9 +15,11 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--text-color);
+  scroll-behavior: smooth;
 }
 
 body {
+  scroll-behavior: smooth;
   font-family: var(--secondary-font);
 }
 
@@ -42,6 +44,10 @@ header .nav_container {
   padding: 20px 5px;
 }
 
+.modal{
+  display: none;
+}
+
 .modal_btn{
   display: none;
 }
@@ -60,6 +66,9 @@ header .nav_container .logo_container {
   gap: 10px;
 }
 
+.nav_container .col .btn_container button{
+  border-radius: 5px;
+}
 
 header .nav_container .logo_container .logo {
   width: 50px;
@@ -133,6 +142,10 @@ header .nav_container .signup_btn {
 header .nav_container .signup_btn:hover {
   background: var(--secondary-color);
   color: var(--primary-color);
+}
+
+header .nav_container .modal{
+  display: flex;
 }
 
 .swiper {
@@ -296,6 +309,11 @@ header .nav_container .signup_btn:hover {
   padding: 60px 5px;
   margin: 0 auto;
   cursor: grab;
+}
+
+
+#section2{
+  display: none !important;
 }
 
 .hero_container_2 .book_swiper_container .img_container {
@@ -502,6 +520,7 @@ header .nav_container .signup_btn:hover {
 
 .title_container {
   padding: 10px 0px;
+  width: 100%
 }
 
 .title_container h4 {
@@ -526,7 +545,7 @@ header .nav_container .signup_btn:hover {
   flex-wrap: wrap;
   gap: 50px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .product_card .img_container {
@@ -615,7 +634,8 @@ header .nav_container .signup_btn:hover {
 .flash_section .flash_container .content_container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
   gap: 30px;
   padding: 20px 0px;
 }
@@ -670,6 +690,7 @@ header .nav_container .signup_btn:hover {
   width: 100%;
   height: 100%;
   background: var(--secondary-color);
+  margin-top: 30px;
 }
 
 .new_launch_section .new_launch_container {
@@ -683,6 +704,10 @@ header .nav_container .signup_btn:hover {
 
 .new_launch_section .new_launch_container .col {
   flex: 1;
+}
+
+.new_launch_section .new_launch_container .col:nth-child(2) {
+  padding-right: 30px;
 }
 
 .new_launch_section .new_launch_container .col .img_container {
@@ -978,6 +1003,7 @@ header .nav_container .signup_btn:hover {
   justify-content: center;
 }
 
+
 .client_group_container .img_container{
   width: 50px;
   height: 50px;
@@ -1027,10 +1053,15 @@ header .nav_container .signup_btn:hover {
   flex-direction: column;
 }
 
+.blog_section .blog_container .content{
+  width: 100%;
+}
+
+
 .blog_section .blog_container .content .row{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -1040,7 +1071,6 @@ header .nav_container .signup_btn:hover {
   border-radius: 10px;
   max-width: 280px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  
 }
 
 .blog_section .blog_container .content .row .img_container img{
@@ -1094,7 +1124,6 @@ header .nav_container .signup_btn:hover {
   align-items: center;
   justify-content: center;
   padding: 50px 0;
-  margin-top: 50px;
 }
 
 .newsletter_section .newsletter_container{
@@ -1184,12 +1213,22 @@ footer .footer_container{
   height: 100%;
   display: flex;
   align-items: start;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
+}
+
+footer .footer_container .column{
+  max-width: 40%;
 }
 
 footer .footer_container .col{
   flex: 1;
+}
+
+footer .footer_container .column{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 footer .footer_container .col:nth-child(1){

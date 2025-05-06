@@ -1,4 +1,4 @@
-@media only screen and (max-width: 940px) {
+@media (max-width: 940px) {
     .hero_section .hero_container {
         flex-direction: column;
     }
@@ -47,15 +47,15 @@
         max-width: 90%;
     }
 
-    .social_container .social_row button{
+    .social_container .social_row button {
         padding: 8px;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    header .nav_container .menu_container{
+@media (max-width: 800px) {
+    header .nav_container .menu_container {
         position: fixed;
-        top: 90px;
+        top: 85px;
         width: 250px;
         right: 38px;
         background-color: var(--light-color);
@@ -68,11 +68,11 @@
         overflow: hidden;
     }
 
-    header .nav_container{
+    header .nav_container {
         padding: 15px 0px;
     }
 
-    header .nav_container .menu_container .menu_list{
+    header .nav_container .menu_container .menu_list {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -80,30 +80,266 @@
         position: relative;
     }
 
-    header .nav_container .menu_container .menu_list li{
+    header .nav_container .menu_container .menu_list li {
         font-size: 18px;
     }
 
-    header .nav_container .menu_container .menu_list button{
+    header .nav_container .menu_container .menu_list button {
         display: flex;
         position: absolute;
         top: -50px;
         right: -60px;
         border-radius: 10px;
-      }
+    }
 
-      header .nav_container .modal{
+    header .nav_container .modal {
         display: none;
-      }
+    }
 
-      header .nav_container .modal.open{
+    header .nav_container .modal.open {
         display: flex;
-      }
+    }
 
-      .modal_btn{
+    .modal_btn {
+        background-color: var(--text-color);
         display: flex;
         padding: 12px 25px !important;
         border: none;
         cursor: pointer;
-      }
+        transition: all .3s ease;
+    }
+
+    .modal_btn i {
+        color: var(--light-color);
+    }
+
+    .modal_btn:hover {
+        background-color: var(--primary-color);
+    }
+
+    .closed,
+    .closed i {
+        transition: all .3s ease;
+    }
+
+    .closed:hover {
+        background-color: var(--primary-color);
+    }
+
+    .closed:hover i {
+        color: var(--light-color);
+    }
+
+    .special_offers_section .special_offers_container .content_container {
+        justify-content: space-around;
+    }
+
+    .special_offers_section .special_offers_container .product_card .img_container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product_card {
+        width: 35%;
+    }
+
+    .new_launch_section .new_launch_container .col .title_container h1 {
+        font-size: 18px;
+    }
+
+    .new_launch_section .new_launch_container .col .title_container p {
+        font-size: 10px;
+        width: 90%;
+    }
+
+    .new_launch_section .new_launch_container .col p {
+        font-size: 10px;
+        width: 90%;
+    }
+
+    .new_launch_section .new_launch_container .col .buy_now {
+        padding: 8px 25px;
+    }
+
+    .blog_section .blog_container .content .row {
+        justify-content: space-around;
+    }
+}
+
+
+
+@media (max-width: 476px) {
+    header .nav_container .menu_container {
+        right: 20px;
+        top: 80px;
+    }
+
+    .nav_container .col .logo_container {
+        gap: 5px;
+    }
+
+    .nav_container .col .logo_container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav_container .col .btn_container button {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    .nav_container .col .modal_btn {
+        padding: 7px 14px !important;
+        font-size: 12px;
+    }
+
+    .hero_section .hero_container .hero_swiper_container {
+        width: 100%;
+    }
+
+    .hero_swiper_container .slider_container .text_container h5 {
+        font-size: 14px;
+    }
+
+    .hero_swiper_container .slider_container .text_container h1 {
+        font-size: 18px;
+        padding: 10px 0px;
+    }
+
+    .hero_swiper_container .slider_container .text_container h3 {
+        font-size: 14px !important;
+        padding: 5px 0px;
+        width: 80%;
+    }
+
+    .hero_swiper_container .slider_container .text_container p {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .hero_swiper_container .slider_container .text_container .btn_container {
+        display: none;
+    }
+
+
+    .features_section .features_container {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        flex-direction: column;
+    }
+
+    .features_section .features_container .col {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .features_section .features_container h1 {
+        font-size: 16px !important;
+    }
+
+    .features_section .features_container p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .features_section .features_container .col .content {
+        width: 100%;
+    }
+
+    #section1 {
+        display: none;
+    }
+
+    #section2 {
+        display: flex !important;
+    }
+
+    .trending_section .trending_container {
+        flex-wrap: wrap;
+    }
+
+    .trending_section .trending_container .col {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .trending_section .trending_container .col .content_container {
+        padding: 5px 0px !important;
+    }
+
+    .trending_section .trending_container .col .content_container .img_container img {
+        margin: 0 auto;
+        width: 60%;
+        height: 60%;
+    }
+
+    .flash_section .flash_container .content_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .flash_section .flash_container .content_container .product_card {
+        width: 40%;
+    }
+
+    .new_launch_section .new_launch_container {
+        flex-direction: column;
+    }
+
+    #col {
+        padding: 20px !important;
+    }
+
+    .books_on_sales_section .books_on_sales_container .product_card {
+        margin: 0 auto;
+    }
+
+    .featured_books_section .featured_books_container .featured_book .row {
+        flex-direction: column;
+    }
+
+    .featured_books_section .featured_books_container .featured_book .row .left {
+        margin: 0 auto;
+    }
+
+    .blog_section .blog_container .content .row .blog_card {
+        max-width: 100% !important;
+    }
+
+    .newsletter_section .newsletter_container{
+        max-width: 100%;
+    }
+
+    .newsletter_section .newsletter_container .newsletter_inner{
+        border-radius: 0px;
+    }
+
+    .newsletter_section .newsletter_container .newsletter_inner h1{
+        font-size: 20px;
+    }
+
+    footer .footer_container .column{
+        max-width: 100%;
+    }
+
+    .newsletter_section .newsletter_container .newsletter_inner .input_container{
+        width: 100%;
+    }
+
+    footer .footer_container{
+        flex-wrap: wrap;
+    }
+
+    footer .footer_container .col1{
+        max-width: 100%;
+    }
+
+    footer .copy_right_container{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
 }
