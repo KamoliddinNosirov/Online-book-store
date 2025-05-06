@@ -1,0 +1,109 @@
+@media only screen and (max-width: 940px) {
+    .hero_section .hero_container {
+        flex-direction: column;
+    }
+
+    .hero_section .hero_container .col:nth-child(1) {
+        width: 100%;
+    }
+
+    .hero_section .hero_container .col:nth-child(2) {
+        display: none;
+    }
+
+    .features_section .features_container .col .content {
+        flex-direction: column;
+    }
+
+    .features_section .features_container {
+        gap: 20px;
+    }
+
+    .features_section .features_container .col .content .text_content_container {
+        text-align: center;
+    }
+
+    .trending_section .trending_container .col .title_container {
+        width: 100%;
+    }
+
+    .featured_books_section .featured_books_container {
+        flex-direction: column;
+    }
+
+    .testimonial .top h1 {
+        font-size: 14px;
+    }
+
+    .testimonial .bottom .col .start_container i {
+        font-size: 10px;
+    }
+
+    .blog_section .blog_container .content .row .text_container p {
+        font-size: 12px;
+    }
+
+    .newsletter_section .newsletter_container {
+        max-width: 90%;
+    }
+
+    .social_container .social_row button{
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header .nav_container .menu_container{
+        position: fixed;
+        top: 90px;
+        width: 250px;
+        right: 38px;
+        background-color: var(--light-color);
+        z-index: 10000;
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    header .nav_container{
+        padding: 15px 0px;
+    }
+
+    header .nav_container .menu_container .menu_list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    header .nav_container .menu_container .menu_list li{
+        font-size: 18px;
+    }
+
+    header .nav_container .menu_container .menu_list button{
+        display: flex;
+        position: absolute;
+        top: -50px;
+        right: -60px;
+        border-radius: 10px;
+      }
+
+      header .nav_container .modal{
+        display: none;
+      }
+
+      header .nav_container .modal.open{
+        display: flex;
+      }
+
+      .modal_btn{
+        display: flex;
+        padding: 12px 25px !important;
+        border: none;
+        cursor: pointer;
+      }
+}
